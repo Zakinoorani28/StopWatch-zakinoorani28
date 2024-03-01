@@ -1,0 +1,160 @@
+/* Stop Watch CSS  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #3498db, #e74c3c);
+}
+
+#stopwatch-container {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  background: linear-gradient(to right, #000, #333, black);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px;
+}
+
+#time-display {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#buttons-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* btn styling */
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  padding: 12px;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 10px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.btns {
+  background-image: linear-gradient(
+    to right,
+    #6253e1,
+    #852d91,
+    #a3a1ff,
+    #f24645
+  );
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+/* footer css  */
+
+footer {
+  background-color: #333;
+  width: 100%;
+  color: #fff;
+  padding: 18px;
+  position: absolute;
+  bottom: 0;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+/* responsive for mobile  */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+  }
+
+  #stopwatch-container {
+    max-width: 100%;
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  #time-display {
+    font-size: 1.3em;
+  }
+
+  .btn-hover {
+    font-size: 0.6em;
+    padding: 8px 12px;
+  }
+
+  /* .social-icons {
+    margin-top: 20px;
+  } */
+
+  .social-icons a {
+    font-size: 1.2em;
+  }
+}
